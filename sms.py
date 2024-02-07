@@ -7,8 +7,7 @@ import ctypes
 from colorama import Fore, Back, Style
 from time import sleep
 
-def set_console_title(title):
-    ctypes.windll.kernel32.SetConsoleTitleW(title)
+
 
 # Başlık belirleme
 new_title = "Hoşgeldiniz! / SMS Bomber v1.1 by CGNUSL"
