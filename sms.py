@@ -8,7 +8,7 @@ from colorama import Fore, Back, Style
 from time import sleep
 
 
-
+os.system("cls")
 # Başlık belirleme
 new_title = "Hoşgeldiniz! / SMS Bomber v1.1 by CGNUSL"
 
