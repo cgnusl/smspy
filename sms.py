@@ -13,7 +13,7 @@ app = Flask(__name__)
 
 def clear_terminal():
     os.system('clear')
-
+clear_terminal()
 password_url = "https://careful-charming-trigonometry.glitch.me/getpass"
 
 # GET isteği gönder
@@ -25,7 +25,7 @@ if response.status_code == 200:
     accounts_data = response.json().get("accounts")
     
     # Kullanıcıdan anahtarı al
-    input_key = input("Anahtarı girin: ")
+    input_key = input("Anahtarı girin (çıkmak için direkt enter): ")
 
     # Anahtara karşılık gelen hesabı kontrol et
     matching_account = next((account for account in accounts_data if account["secret_key"] == input_key), None)
