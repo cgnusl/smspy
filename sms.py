@@ -13,11 +13,6 @@ app = Flask(__name__)
 
 
 
-# Başlık belirleme
-new_title = "Hoşgeldiniz! / SMS Bomber v1.1 by CGNUSL"
-
-# Konsol penceresine başlığı uygula
-set_console_title(new_title)
 
 password_url = "https://careful-charming-trigonometry.glitch.me/getpass"
 
