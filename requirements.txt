@@ -1,0 +1,7 @@
+requests    
+colorama
+json
+time
+os
+flask
+ctypes
