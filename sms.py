@@ -11,8 +11,8 @@ from datetime import datetime
 
 app = Flask(__name__)
 
-
-
+def clear_terminal():
+    os.system('clear')
 
 password_url = "https://careful-charming-trigonometry.glitch.me/getpass"
 
@@ -35,7 +35,7 @@ if response.status_code == 200:
         username = matching_account.get("username", "Bilinmeyen Kullanıcı")  # Örnek olarak "Bilinmeyen Kullanıcı" belirtildi.
         print(f"Giriş başarılı! Hoşgeldiniz " + Fore.CYAN + f"{username}" + Fore.RESET + " program hemen çalışacaktır.")
         sleep(3)
-        os.system("cls")
+        clear_terminal()     #os.system("cls")
         # Burada giriş başarılı olduğu için devam eden kodları ekleyebilirsiniz.
     else:
         print("Hatalı anahtar. Program kapatılıyor.")
