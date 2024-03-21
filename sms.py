@@ -43,7 +43,7 @@ if response.status_code == 200:
         print(Fore.RESET)
         exit()
 
-def animate_text(text, delay=0.1):
+def animate_text(text, delay=0.03):
     for char in text:
         print(char, end='', flush=True)
         time.sleep(delay)
